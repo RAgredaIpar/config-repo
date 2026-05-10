@@ -7,7 +7,7 @@ spring:
     password: ima
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
 eureka:
   client:
     service-url:
