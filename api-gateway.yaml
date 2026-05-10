@@ -1,6 +1,23 @@
 server:
   port: 8080
 
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: cliente-route
+          uri: lb://CLIENTE-SERVICE
+          predicates:
+            - Path=/api/v1/clientes/**, /api/v1/auth/**
+        - id: paquete-route
+          uri: lb://PAQUETE-SERVICE
+          predicates:
+            - Path=/api/v1/paquetes/**
+        - id: tracking-route
+          uri: lb://TRACKING-SERVICE
+          predicates:
+            - Path=/api/v1/tracking/**
+
 eureka:
   client:
     service-url:
