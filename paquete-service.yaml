@@ -1,15 +1,13 @@
 server:
   port: 8082
-
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/paquete_db
+    url: jdbc:postgresql://localhost:5433/paquete_db
     username: postgres
     password: ima
   jpa:
     hibernate:
       ddl-auto: update
-
 eureka:
   client:
     service-url:

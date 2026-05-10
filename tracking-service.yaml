@@ -1,15 +1,13 @@
 server:
   port: 8083
-
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/tracking_db
+    url: jdbc:postgresql://localhost:5434/tracking_db
     username: postgres
     password: ima
   jpa:
     hibernate:
       ddl-auto: update
-
 eureka:
   client:
     service-url:
