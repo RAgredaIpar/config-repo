@@ -17,7 +17,7 @@ spring:
         - id: paquete-route
           uri: lb://PAQUETE-SERVICE
           predicates:
-            - Path=/api/v1/paquetes, /api/v1/paquetes/**, /api/v1/categorias, /api/v1/paquetes/**
+            - Path=/api/v1/paquetes, /api/v1/paquetes/**, /api/v1/categorias, /api/v1/categorias/**
         - id: tracking-route
           uri: lb://TRACKING-SERVICE
           predicates:
