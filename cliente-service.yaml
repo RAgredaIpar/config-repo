@@ -12,3 +12,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+reniec:
+  api:
+    token: "sk_14403.36vBAyzXyTo1BohgGRBoJJ6ku5oS6X9c"
